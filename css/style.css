@@ -1,0 +1,15 @@
+:root {
+  /* Fonts */
+  --main-font: 'Roboto', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
+
+  /* Text colors */
+  --main-txt-cl: #212121;
+
+  /* Background colors */
+
+  /* Others */
+}
+.page {
+  font-family: var(--main-font);
+}
