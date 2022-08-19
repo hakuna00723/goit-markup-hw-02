@@ -6,13 +6,14 @@
   /* Text colors */
   --main-txt-cl: #212121;
   --secondary-txt-cl: #757575;
-  --accent-txt-cl: #2196f3;
   --light-txt-cl: #ffffff;
   --dark-logo-cl: #000000;
-  --blue-logo-cl: #2196f3;
+  --blue-cl: #2196f3;
+  --info-txt-cl: rgba(255, 255, 255, 0.6);
 
   /* Background colors */
-  --accent-bg-cl: #2196f3;
+  --main-background-cl: #2f303a;
+
   /* Others */
 }
 .page {
@@ -35,9 +36,7 @@
 }
 
 /* HEADER */
-.header {
-}
-.logo {
+.header-logo {
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
@@ -45,26 +44,31 @@
   letter-spacing: 0.03em;
   color: var(--dark-logo-cl);
 }
-.logo span {
-  color: var(--blue-logo-cl);
+.header-logo span {
+  color: var(--blue-cl);
 }
-.main-nav {
+
+.header {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
 }
-.main-nav-list {
+.main-nav-link:hover,
+.main-nav-link:focus {
+  color: var(--blue-cl);
 }
-.main-nav-item {
+.main-nav-link.current {
+  color: var(--blue-cl);
 }
-.main-nav-link {
+.header-contact-link:hover,
+.header-contact-link:focus {
+  color: var(--blue-cl);
 }
-.header-contact-list {
-}
-.header-contact-item {
-}
-.header-contact-link {
-}
+
 /* HERO */
 .hero {
-  background-color: #2f303a;
+  background-color: var(--main-background-cl);
 }
 .hero-title {
   font-weight: 900;
@@ -84,5 +88,85 @@
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--light-txt-cl);
-  background-color: var(--accent-bg-cl);
+  background-color: var(--blue-cl);
+}
+
+/* FEATURES */
+/* .features-main-title {
+  opacity: 0;
+} */
+
+.features-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.features-subtitle {
+  letter-spacing: 0.03em;
+  color: var(--secondary-txt-cl);
+}
+
+/* FUNCTION */
+.function-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-txt-cl);
+}
+
+/* TEAM */
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-txt-cl);
+}
+
+.name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-txt-cl);
+}
+.profession {
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-txt-cl);
+}
+
+/* FOOTER */
+.footer {
+  background-color: var(--main-background-cl);
+}
+.footer-logo {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  letter-spacing: 0.03em;
+  color: var(--light-txt-cl);
+}
+.footer-logo span {
+  color: var(--blue-cl);
+}
+.info-list {
+  font-style: normal;
+}
+.adress-link {
+  letter-spacing: 0.03em;
+  color: var(--light-txt-cl);
+}
+.info-link {
+  letter-spacing: 0.03em;
+  color: var(--info-txt-cl);
 }
