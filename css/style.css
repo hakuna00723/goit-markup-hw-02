@@ -5,11 +5,84 @@
 
   /* Text colors */
   --main-txt-cl: #212121;
+  --secondary-txt-cl: #757575;
+  --accent-txt-cl: #2196f3;
+  --light-txt-cl: #ffffff;
+  --dark-logo-cl: #000000;
+  --blue-logo-cl: #2196f3;
 
   /* Background colors */
-
+  --accent-bg-cl: #2196f3;
   /* Others */
 }
 .page {
   font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: var(--main-txt-cl);
+}
+
+/* Reset */
+.link {
+  text-decoration: none;
+  color: currentColor;
+}
+
+.list {
+  list-style: none;
+}
+
+/* HEADER */
+.header {
+}
+.logo {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  letter-spacing: 0.03em;
+  color: var(--dark-logo-cl);
+}
+.logo span {
+  color: var(--blue-logo-cl);
+}
+.main-nav {
+}
+.main-nav-list {
+}
+.main-nav-item {
+}
+.main-nav-link {
+}
+.header-contact-list {
+}
+.header-contact-item {
+}
+.header-contact-link {
+}
+/* HERO */
+.hero {
+  background-color: #2f303a;
+}
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: calc(60 / 44);
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--light-txt-cl);
+}
+.hero-btn {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--light-txt-cl);
+  background-color: var(--accent-bg-cl);
 }
