@@ -12,16 +12,14 @@
   --info-txt-cl: rgba(255, 255, 255, 0.6);
 
   /* Background colors */
-  --main-background-cl: #2f303a;
+  --main-background-cl: #ffffff;
+  --secondary-background-cl: #2f303a;
   --grey-background-cl: #f5f4fa;
 }
 
 .page {
+  background-color: var(--main-background-cl);
   font-family: var(--main-font);
-  font-weight: 400;
-  font-size: 14px;
-  line-height: calc(24 / 14);
-  letter-spacing: 0.03em;
   color: var(--main-txt-cl);
 }
 
@@ -47,7 +45,6 @@
 .logo-part {
   color: var(--blue-cl);
 }
-
 .header {
   font-weight: 500;
   font-size: 14px;
@@ -55,21 +52,20 @@
   letter-spacing: 0.02em;
 }
 .main-nav-link:hover,
-.main-nav-link:focus {
-  color: var(--blue-cl);
-}
-.main-nav-link.current {
-  color: var(--blue-cl);
-}
+.main-nav-link:focus,
+.main-nav-link.current,
 .header-contact-link:hover,
 .header-contact-link:focus {
   color: var(--blue-cl);
+}
+.header-contact-list {
+  color: var(--secondary-txt-cl);
 }
 
 /* PAGE STUDIO */
 /* HERO */
 .hero {
-  background-color: var(--main-background-cl);
+  background-color: var(--secondary-background-cl);
 }
 .hero-title {
   font-weight: 900;
@@ -82,12 +78,15 @@
 }
 .hero-btn {
   font-family: inherit;
+  font-weight: 700;
   font-size: 16px;
   line-height: calc(30 / 16);
   letter-spacing: 0.06em;
   color: var(--light-txt-cl);
   background-color: var(--blue-cl);
   cursor: pointer;
+  border-style: none;
+  border-radius: 4px;
 }
 
 /* FEATURES */
@@ -104,6 +103,8 @@
   text-transform: uppercase;
 }
 .features-subtitle {
+  font-size: 14px;
+  line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: var(--secondary-txt-cl);
 }
@@ -119,6 +120,9 @@
 }
 
 /* TEAM */
+.team {
+  background-color: var(--grey-background-cl);
+}
 .team-title {
   font-weight: 700;
   font-size: 36px;
@@ -137,7 +141,6 @@
   color: var(--main-txt-cl);
 }
 .profession {
-  font-size: 16px;
   line-height: calc(19 / 16);
   text-align: center;
   letter-spacing: 0.03em;
@@ -146,7 +149,7 @@
 
 /* FOOTER */
 .footer {
-  background-color: var(--main-background-cl);
+  background-color: var(--secondary-background-cl);
 }
 .footer-logo {
   font-family: var(--secondary-font);
@@ -157,7 +160,7 @@
   color: var(--light-txt-cl);
 }
 
-.info-list {
+.info {
   font-style: normal;
 }
 .adress-link {
@@ -167,6 +170,12 @@
 .info-link {
   letter-spacing: 0.03em;
   color: var(--info-txt-cl);
+}
+.adress-link:hover,
+.adress-link:focus,
+.info-link:hover,
+.info-link:focus {
+  color: var(--blue-cl);
 }
 
 /* PAGE PORTFOLIO */
@@ -186,10 +195,7 @@
   cursor: pointer;
 }
 .btn:hover,
-.btn:focus {
-  color: var(--light-txt-cl);
-  background-color: var(--blue-cl);
-}
+.btn:focus,
 .btn.active {
   color: var(--light-txt-cl);
   background-color: var(--blue-cl);
